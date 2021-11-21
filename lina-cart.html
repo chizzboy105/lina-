@@ -1,0 +1,331 @@
+﻿<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1,shrink-to-fit=no" />
+    <meta name="description" content="online shopping" />
+    <meta name="keywords" content="html,css,javascricpt" />
+    <meta name="author" content="ChizzBoy" />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <script src="https://unpkg.com/cart-localstorage@1.1.4/dist/cart-localstorage.min.js" type="text/javascript">
+
+    </script>
+
+    <title>Cart & Check-Out</title>
+
+    <style>
+
+        body {
+            cursor: pointer;
+            backface-visibility: visible;
+            background-image: src(splash-d.jpg);
+            background-image: src(splash-d.jpg);
+            background-size: cover;
+            background: no-repeat;
+        }
+
+        li {
+            list-style: none;
+            float: left;
+            padding: 10px;
+            margin: auto;
+            font-size: 18px;
+        }
+
+            li:hover {
+                color: cadetblue;
+            }
+
+        .category li {
+            list-style: none;
+            float: left;
+            padding: 25px;
+            margin: 0px 10px 0px 40px;
+            font-size: 25px;
+        }
+
+        .button {
+            padding: 15px 25px;
+            font-size: 24px;
+            text-align: center;
+            cursor: pointer;
+            outline: none;
+            color: #fff;
+            background-color: #04AA6D;
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 9px #999;
+        }
+
+        button {
+            padding: 15px 25px;
+            font-size: 24px;
+            text-align: center;
+            cursor: pointer;
+            outline: none;
+            color: #fff;
+            background-color: #04AA6D;
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 9px #999;
+        }
+
+        .fa {
+            padding: 0px;
+            font-size: 30px;
+            width: 50px;
+            text-align: center;
+            text-decoration: none;
+            margin: 5px 2px;
+        }
+
+            .fa:hover {
+                opacity: 0.7;
+            }
+
+
+    </style>
+
+ </head >
+<body>
+
+
+    <div class="header" style="background-color:black; color:white">
+        <br />
+        <h1 align="center" style="color:gold; font-family:Algerian; font-size:50px"> CART & CHECK-OUT  </h1>
+        <br />
+    </div>
+
+    <a href="mainpage.html">
+        <li> <<</li>
+    </a>
+    <br />
+
+    <div class="card mb-4 shadow-sm" align="center">
+        <div class="card-header">
+            <h2 id="payout">Cart</h2>
+        </div>
+        <div class="card-body">
+            <table class="table">
+                <tbody class="cart">
+                </tbody>
+                <tfoot>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="text-right">Total: <strong class="total"></strong></td>
+                <td></td>
+                </tfoot>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        function renderCart(items) {
+            const $cart = document.querySelector(".cart")
+            const $total = document.querySelector(".total")
+
+            $cart.innerHTML = items.map((item) => `
+                                                                <tr>
+                                                                    <td>#${item.id}</td>
+                                                                    <td>${item.name}</td>
+                                                                    <td>${item.quantity}</td>
+                                                                    <td style="width: 60px;">
+                                                                        <button type="button" class="btn btn-block btn-sm btn-outline-primary"
+                                                                            onClick="cartLS.quantity(${item.id},1)">+</button>
+                                                                    </td>
+                                                                    <td style="width: 60px;">
+                                                                        <button type="button" class="btn btn-block btn-sm btn-outline-primary"
+                                                                            onClick="cartLS.quantity(${item.id},-1)">-</button>
+                                                                    </td>
+                                                                    <td class="text-right">$${item.price}</td>
+                                                                    <td class="text-right"><Button class="btn btn-primary" onClick="cartLS.remove(${item.id})">Delete</Button></td>
+                                                                </tr>`).join("")
+
+            $total.innerHTML = "$" + cartLS.total()
+        }
+        renderCart(cartLS.list())
+        cartLS.onChange(renderCart)
+    </script>
+    <br />
+    <center>
+        <a href="https://wa.me/264812530545" target="_blank ">
+            <i class="fa fa-whatsapp"></i>
+        </a>
+        <br />
+        <br />
+        <desc>Click on Icon To Check Out</desc>
+    </center>
+    <br />
+    <br />
+    <hr />
+    <h1 align="center"> Payment Methods</h1>
+    <br />
+    <h3 id="info" align="center" style="color:aqua"> AVAILABLE : FNB_EWALLET </h3>
+
+
+    <p align="center"> Payment Done Directly too payment methods available<span style="color:red"> OR </span> Contact Us For Other Means Of Payment :<span style="color:blue"> BANK TRANSFERS</span></p>
+    <br />
+
+    <div align="center" class="info">
+
+        <h2 style="color:chartreuse">
+            <span style="color:red"> NB ! : </span>How We Operate
+        </h2>
+        <br />
+
+        <p>
+            1.Add To Cart<br />2.Take ScreenShot Of your Cart <br />3.Click On Whatsapp icon To Procceed to Payment <br />4.Send ScreenShot of your cart Items To Be Ordered via WhatsApp<br />5.Recieve Further Instructions for Completing Your Order <br />6.Recieve Purchase Invoice <br />7.<span style="color:greenyellow"> Order Complete + link back To Site </span>
+        </p>
+
+    </div>
+
+    <h2 align="center"> <a href="tel:+264-812-530-545"> Copy E-WALLET Number </a> </h2>
+    <br />
+    <table align="left" border="0" width="100%" bgcolor="#ffd699">
+        <tr>
+            <th><h2> OPERATING HOURS </h2></th>
+        </tr>
+    </table>
+    <br />
+
+    <table align="center" border="0" width="100%" bgcolor="white">
+        <tr>
+            <th>
+                DAYS :
+                <p>
+                    MONDAY-FRIDAY
+                </p>
+                <p>
+                    SATURDAY- SUNDAY
+                </p>
+            </th>
+            <th>
+                TIMINGS
+                <p>
+                    9:45 -18:30
+                </p>
+                <p>
+                    10:30 - 16:30
+                </p>
+            </th>
+
+        </tr>
+    </table>
+    <table align="left" border="0" width="100%" bgcolor="#ffd699">
+        <tr>
+            <th><h2>  </h2></th>
+        </tr>
+    </table>
+
+    <br />
+    <h1 style="color:darkorange" align="center"><b><i>Our Social Media Platforms...</i></b></h1>
+    <br />
+
+    <table id="social" border="0" width="100%" bgcolor="gold">
+        <tr>
+            <td align="center">
+                <a href="https://wa.me/264812530545" target="_blank ">
+                    <i class="fa fa-whatsapp"></i>
+                </a>
+            </td>
+            <td align="center">
+                <a href="https://www.facebook.com/brojansen" target="_blank">
+                    <i class="fa fa-facebook"></i>
+                </a>
+            </td>
+            <td align="center">
+                <a href="https://www.instagram.com/exclusive_nail_palace/" target="_blank">
+                    <i class="fa fa-instagram"></i>
+                </a>
+            </td>
+            <td align="center">
+                <a href="https://youtu.be/R7h69W3zw74" target="_blank">
+                    <i class="fa fa-youtube"></i>
+                </a>
+            </td>
+            <td align="center">
+                <a href="mailto:linaboutique332.com" target="_blank">
+                    <i class="fa fa-google"></i>
+                </a>
+            </td>
+        </tr>
+    </table>
+    <br />
+
+    <a href="lina-Hub.html" target="_blank">
+        <h4 align="center"> Go Back Home  </h4>
+    </a>
+
+    <div align="center" class="container">
+
+        <div class="w3-card-4" style="width:50%">
+            <header class="w3-container w3-light-grey">
+                <h2 id="lina-about" style="color:yellow" align="center">Lina's Boutique  </h2>
+            </header>
+            <div class="w3-container">
+
+                <hr />
+                <h3 style="color:mediumpurple" align="center">
+                    IS a intergrated website to facilitate online services in one go.
+                    What you can expect : a wide range of product & services.
+                    Please do leave  comment to help us make it easy for us to improve our
+                    services ,we highly appreciate your input.
+                </h3>
+
+            </div>
+            <a href="https://www.linkedin.com/in/williamhgates/" target="_blank">
+                <i class="fa-fa-linkedin-in" style="color:aqua">
+                    <img src="linkedin-49-226551.jpg" alt="Linked-In.jpg" />
+                </i>
+            </a>
+        </div>
+    </div>
+    <br />
+    <table align="left" border="0" width="100%" bgcolor="#ffd699">
+        <tr>
+            <th><h2>Contact US </h2></th>
+        </tr>
+    </table>
+    <br />
+
+    <table align="center" border="0" width="100%" bgcolor="white">
+        <tr>
+            <th>
+                Company :
+                <p>
+                    Lina's Boutique
+                </p>
+            </th>
+            <th>
+                About Us
+                <p>Our Misssion : I Can You Can We can Do It</p>
+            </th>
+            <th>
+                Contact Us
+                <p> <a href="tel:+264-812-530-545">+264 812 530 545</a></p>
+                <a href="mailto:linaboutique332.com" target="_blank">Info @linaboutique332@gmail.com</a>
+            </th>
+        </tr>
+    </table>
+
+    <table border="0" width="100%">
+        <tr>
+            <td align="center"><a href="">T&C's</a></td>
+            <td align="center"><a href="">Disclaimer</a></td>
+            <td align="center"><a href="">Privacy</a></td>
+            <td align="center"><a href="">Policy</a></td>
+        </tr>
+    </table>
+
+    <table border="0" width="100%" bgcolor="grey">
+        <tr>
+            <td align="center"><p>@ &nbsp;2021 Official Chizzboy </p></td>
+        </tr>
+    </table>
+</body>
+        </html >
