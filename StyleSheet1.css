@@ -3,6 +3,7 @@
     cursor:pointer;
     background-image:url("whiteflower.jpg");
     background-size:contain;
+    display:flex;
 }
 h4{
     color:whitesmoke;
