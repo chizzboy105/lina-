@@ -1,0 +1,311 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="Stylesheet1.css" />
+    <title>Next Page</title>
+    <style>
+        body {
+            cursor: pointer;
+            background-image: url("whiteflower.jpg");
+            background-size: contain;
+        }
+
+        h4 {
+            color: rgb(239 233 233 / 0.64);
+            font-display: swap;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 20px;
+            font-style: normal;
+            text-decoration-color: inherit;
+        }
+
+        h5 {
+            color: rgb(174 67 113 / 0.63);
+            font-display: swap;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 20px;
+            font-style: normal;
+            text-decoration-color: inherit;
+        }
+
+        ul {
+            background-color: transparent;
+            list-style: none;
+            float: left;
+            color: red;
+            font-size: 16px;
+            flex: none;
+        }
+
+        li {
+            text-align: center;
+            color: black;
+            float: left;
+            font-size: 20px;
+            list-style: none;
+            padding: 1px 2px 2px 1px;
+            margin: 2px 2px 2px 2px;
+            color: blue;
+        }
+
+        div ul li {
+            position: center;
+        }
+
+        div li:hover {
+            color: gray;
+            transition: ease-in-out;
+            background-color: rgb(245 245 245 / 0.25);
+        }
+
+        div li img:hover {
+            transition: ease-in-out;
+            width: 255px;
+            height: 270px;
+        }
+
+        div.card1 img {
+            width: 250px;
+            height: 250px;
+            float: right;
+            padding: 4px;
+            margin: 12px;
+            border: none;
+        }
+
+        button {
+            width: 120px;
+            height: 60px;
+            background-color: transparent;
+            box-shadow: initial;
+            position:absolute;
+            top:20%;
+            right:82%;
+            color:white;
+        }
+
+            button:hover {
+                width: 85px;
+                height: 45px;
+                color: yellow;
+                background-color: whitesmoke;
+            }
+
+        .pagination {
+            display: inline-block;
+            position: absolute;
+            top: 32%;
+            right: 83%;
+            color: white;
+        }
+
+            .pagination a {
+                color: black;
+                float: left;
+                padding: 8px 16px;
+                text-decoration: none;
+                transition: background-color .3s;
+                border: 1px solid #ddd;
+            }
+
+                .pagination a.active {
+                    background-color: #4CAF50;
+                    color: white;
+                    border: 1px solid #4CAF50;
+                }
+
+                .pagination a:hover:not(.active) {
+                    background-color: #ddd;
+                }
+
+
+        .flip-box {
+            background-color: transparent;
+            width: 300px;
+            height: 200px;
+            border: 1px solid #f1f1f1;
+            perspective: 1000px;
+        }
+
+        .flip-box-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            transition: transform 0.8s;
+            transform-style: preserve-3d;
+        }
+
+        .flip-box:hover .flip-box-inner {
+            transform: rotateY(180deg);
+        }
+
+        .flip-box-front, .flip-box-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+        }
+
+        .flip-box-front {
+            background-color: #bbb;
+            color: black;
+        }
+
+        .flip-box-back {
+            background-color: #555;
+            color: white;
+            transform: rotateY(180deg);
+        }
+    </style>
+
+</head>
+<body>
+
+    <div>
+        <ul>
+            <li>
+                <a href="combination.html">
+                    Home
+                </a>
+            </li>
+
+            <li>
+                <a href="team.html">
+                    Team
+                </a>
+            </li>
+
+            <li>
+                <a href="enquire.html">
+                    Contact Info
+                </a>
+            </li>
+
+            <li>
+                <a href="project1-extenstion.html">
+                    Reservation
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div>
+        <img width="100%" height="250px" src="whiteflower.jpg" />
+    </div>
+
+    <div class="card1">
+        <ul bgcolor="grey">
+
+            <li>
+                <div class="flip-box">
+                    <div class="flip-box-inner">
+                        <div class="flip-box-front">
+                            <h5>Fashion</h5>
+                            <img src="banner.jpg" alt="Paris" style="width:300px;height:200px">
+                        </div>
+                        <div class="flip-box-back">
+                            <h2>What We Offer:</h2>
+                            <p>Collection of Collection's<br />
+                            Clothes<br />Shoes & Hair Products</p>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="flip-box">
+                    <div class="flip-box-inner">
+                        <div class="flip-box-front">
+                            <h5>Entertainment:</h5>
+                            <img src="pp.jpg" alt="Paris" style="width:300px;height:200px">
+                        </div>
+                        <div class="flip-box-back">
+                            <h2>What We Offer:</h2>
+                            <p>Music <br />Videos<br />Dj:Song-Remixes<br /> Downloads<br /></p>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+            <li>
+                <div class="flip-box">
+                    <div class="flip-box-inner">
+                        <div class="flip-box-front">
+                            <h5>Food & Drinks :</h5>
+                            <img src="ally.jpg" alt="Paris" style="width:300px;height:200px">
+                        </div>
+                        <div class="flip-box-back">
+                            <h2>What We Offer: </h2>
+                            <p>Bakery <br /> Restuarant<br />Chill Spots</p>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+            <li>
+                <div class="flip-box">
+                    <div class="flip-box-inner">
+                        <div class="flip-box-front">
+                            <h5>Web-Services</h5>
+                            <img src="nikey.jpg" alt="Paris" style="width:300px;height:200px">
+                        </div>
+                        <div class="flip-box-back">
+                            <h2>What We Offer:</h2>
+                            <p>Business Website Templates<br />Advertising On Our Business Sites<br />Personal Blogs</p>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+        </ul>
+    </div>
+
+    <button type="button"><a href="project1-extenstion.html"> <p>Try Us</a></button>
+    
+    
+    <div class="pagination">
+        <a href="combination.html"><</a>
+        <a href="termsnconditions.html">></a>
+    </div>
+       
+    <br />
+    <br />
+    <br />
+    <br />
+    <hr />
+    <br />
+    <table border="0" width="100%" bgcolor="transparent">
+
+        <tr>
+            <th>
+                <h5>
+                    Company :
+                </h5>
+                <p>
+                    <h5 style="color:blue">
+                        CHIZZY STUDIO'S
+                    </h5>
+                </p>
+            </th>
+            <th>
+                <h5>Our Misssion : </h5>
+                <p>TWICE THE VALUE HALF THE PRICE </p>
+            </th>
+            <th>
+                <h5>Contact Us : </h5>
+                <p> <a href="tel:+264-812-530-545">+264 812 530 545</a></p>
+                <a href="mailto:chizzystudios1@gmail.com" target="_blank"><p>Info @chizzystudios1@gmail.com</p></a>
+            </th>
+            <td align="center"><a href="termsnconditions.html" target="_blank"><h6>T&C's</h6></a></td>
+            <td align="center"><a href="termsnconditions.html" target="_blank"><h6>Disclaimer</h6></a></td>
+            <td align="center"><a href="termsnconditions.html" target="_blank"><h6>Privacy</h6></a></td>
+            <td align="center"><p>@ &nbsp;2021 Official Chizzboy </p></td>
+        </tr>
+
+    </table>
+
+</body>
+</html>

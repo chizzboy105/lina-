@@ -1,0 +1,336 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="Stylesheet1.css" />
+    <title>www.chizzystudios</title>
+    <style>
+        body {
+            cursor: pointer;
+            background-image: url("whiteflower.jpg");
+            background-size: contain;
+        }
+
+        h4 {
+            color: rgb(239 233 233 / 0.64);
+            font-display: swap;
+            font-family:'Times New Roman', Times, serif;
+            font-size: 20px;
+            font-style: normal;
+            text-decoration-color: inherit;
+            border:2px solid gold;
+            border-radius:70%;
+            border-block-color:transparent;
+        }
+        h5 {
+            color: rgb(174 67 113 / 0.63);
+            font-display: swap;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 20px;
+            font-style: normal;
+            text-decoration-color: inherit;
+        }
+
+        ul {
+            background-color: transparent;
+            list-style: none;
+            float: left;
+            color: red;
+            font-size: 16px;
+            flex: none;
+        }
+
+        li {
+            text-align: center;
+            color: black;
+            float: left;
+            font-size: 20px;
+            list-style: none;
+            padding: 1px 2px 2px 1px;
+            margin: 2px 2px 2px 2px;
+            color: blue;
+        }
+
+        div ul li {
+            position: center;
+        }
+
+        div li:hover {
+            color: gray;
+            transition: ease-in-out;
+            background-color: rgb(245 245 245 / 0.25);
+        }
+
+        div li img:hover {
+            transition: ease-in-out;
+            width: 255px;
+            height: 250px;
+        }
+
+        div.card1 img {
+            width: 250px;
+            height: 250px;
+            float: right;
+            padding: 4px;
+            margin: 12px;
+            border: none;
+            opacity:0.9;
+        }
+
+        button {
+            width: 80px;
+            height: 40px;
+            background-color: transparent;
+            box-shadow: initial;
+        }
+
+            button:hover {
+                width: 85px;
+                height: 45px;
+                color: yellow;
+                background-color: whitesmoke;
+            }
+
+        .pagination {
+            display: inline-block;
+        }
+
+            .pagination a {
+                color: black;
+                float: left;
+                padding: 8px 16px;
+                text-decoration: none;
+                transition: background-color .3s;
+                border: 1px solid #ddd;
+            }
+
+                .pagination a.active {
+                    background-color: #4CAF50;
+                    color: white;
+                    border: 1px solid #4CAF50;
+                }
+
+                .pagination a:hover:not(.active) {
+                    background-color: #ddd;
+                }
+
+
+        .flip-box {
+            background-color: transparent;
+            width: 300px;
+            height: 200px;
+            border: 1px solid #f1f1f1;
+            perspective: 1000px;
+        }
+
+        .flip-box-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            transition: transform 0.8s;
+            transform-style: preserve-3d;
+        }
+
+        .flip-box:hover .flip-box-inner {
+            transform: rotateY(180deg);
+        }
+
+        .flip-box-front, .flip-box-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+        }
+
+        .flip-box-front {
+            background-color: #bbb;
+            color: black;
+        }
+
+        .flip-box-back {
+            background-color: #555;
+            color: white;
+            transform: rotateY(180deg);
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <div>
+        <ul>
+            <li>
+                <a href="nextpage.html">
+                    Home
+                </a>
+            </li>
+
+            <li>
+                <a href="team.html">
+                    <p style="color:whitesmoke" align="center" font-size="12px" ;>
+                        Team
+                    </p>
+                </a>
+            </li>
+
+            <li>
+                <a href="enquire.html">
+                    Contact Info
+                </a>
+            </li>
+
+            <li>
+                <a href="project1-extenstion.html">
+                    <p style="color:whitesmoke" align="center" font-size="12px" ;>
+                        Reservation
+                    </p>
+                </a>
+            </li>
+            <li>
+                <a href="enquire.html">
+                    External Links Info
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="card1">
+        <ul bgcolor="grey">
+            <li>
+                <h4>Fashion</h4>
+                <img src="reen.jpg" />
+            </li>
+
+            <li>
+                <h4>Entertainment</h4>
+                <img src="drop.jpg" />
+            </li>
+
+            <li>
+                <h4>Food & Drinks </h4>
+                <img src="waterblue.jpg" />
+            </li>
+
+            <li>
+                <h4>Web-Services</h4>
+                <img src="rose.jpg" />
+            </li>
+
+            <li>
+                <div class="flip-box">
+                    <div class="flip-box-inner">
+                        <div class="flip-box-front">
+                            <h5>Home</h5>
+                            <img src="banner.jpg" alt="Paris" style="width:300px;height:200px">
+                        </div>
+                        <div class="flip-box-back">
+                            <h2>About US</h2>
+                            <p>Chizzy Studio's</p>
+                            <small>Collection of Collection's</small>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="flip-box">
+                    <div class="flip-box-inner">
+                        <div class="flip-box-front">
+                            <h5>What we Offer:</h5>
+                            <img src="pp.jpg" alt="Paris" style="width:300px;height:200px">
+                        </div>
+                        <div class="flip-box-back">
+                            <h2>Services & Products</h2>
+                            <p>Online shopping Services and Products at the ease of your fingertips</p>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+            <li>
+                <div class="flip-box">
+                    <div class="flip-box-inner">
+                        <div class="flip-box-front">
+                            <h5>Talk To Us :</h5>
+                            <img src="ally.jpg" alt="Paris" style="width:300px;height:200px">
+                        </div>
+                        <div class="flip-box-back">
+                            <h2>Contact US</h2>
+                            <p>Reach out to us via our various means of contact media's</p>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+            <li>
+                <div class="flip-box">
+                    <div class="flip-box-inner">
+                        <div class="flip-box-front">
+                            <h5>Check Out Our latest Tranding</h5>
+                            <img src="nikey.jpg" alt="Paris" style="width:300px;height:200px">
+                        </div>
+                        <div class="flip-box-back">
+                            <h2>Social US</h2>
+                            <p>For Gallery & Others Check out our Social Media Platforms</p>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+        </ul>
+    </div>
+
+    <a href="Portfolio.html">
+        <button type="button">
+            <p>Try Us
+        </button>
+    </a>
+    <!--
+    <p>Next/Previous </p>
+    <div class="pagination">
+        <a href="frame2.html"><</a>
+        <a href="termsnconditions.html">></a>
+    </div>
+        -->
+    <br />
+    <br />
+    <br />
+    <table border="0" width="100%" bgcolor="transparent">
+
+        <tr>
+            <th>
+                <h5>
+                    Company :
+                </h5>
+                <p>
+                    <h5 style="color:white">
+                        CHIZZY STUDIO'S
+                    </h5>
+                </p>
+            </th>
+            <th>
+                <h5>Our Misssion : </h5>
+                <p style="color:whitesmoke">TWICE THE VALUE HALF THE PRICE </p>
+            </th>
+            <th>
+                <h5>Contact Us : </h5>
+                <a href="tel:+264-812-530-545">
+                    <p style="color:whitesmoke">
+                        +264 812 530 545
+                    </p>
+                </a>
+                <a href="mailto:chizzystudios1@gmail.com" target="_blank"><p style="color:white">Info @chizzystudios1@gmail.com</p></a>
+            </th>
+            <td align="center"><a href="termsnconditions.html" target="_blank"><h6 style="color:dimgray">T&C's</h6></a></td>
+            <td align="center"><a href="termsnconditions.html" target="_blank"><h6 style="color:dimgray">Disclaimer</h6></a></td>
+            <td align="center"><a href="termsnconditions.html" target="_blank"><h6 style="color:dimgray">Privacy</h6></a></td>
+            <td align="center"><small style="color:dimgray">@ &nbsp;2021 Official Chizzboy </small></td>
+        </tr>
+
+    </table>
+
+</body>
+</html>

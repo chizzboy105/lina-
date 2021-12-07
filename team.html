@@ -1,0 +1,142 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        html {
+            box-sizing: border-box;
+        }
+
+        *, *:before, *:after {
+            box-sizing: inherit;
+        }
+
+        .column {
+            float: left;
+            width: 33.3%;
+            margin-bottom: 16px;
+            padding: 0 8px;
+        }
+
+        @media screen and (max-width: 650px) {
+            .column {
+                width: 100%;
+                display: block;
+            }
+        }
+
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        }
+
+        .container {
+            padding: 0 16px;
+        }
+
+            .container::after, .row::after {
+                content: "";
+                clear: both;
+                display: table;
+            }
+
+        .title {
+            color: grey;
+        }
+
+        .button {
+            border: none;
+            outline: 0;
+            display: inline-block;
+            padding: 8px;
+            color: white;
+            background-color: #000;
+            text-align: center;
+            cursor: pointer;
+            width: 100%;
+        }
+
+            .button:hover {
+                background-color: #555;
+            }
+    </style>
+</head>
+<body>
+    <hr />
+    <center>
+        <h2>"Meet The Team" </h2>
+        <hr />
+        <br>
+    </center>
+    <div class="row">
+        <div class="column">
+            <div class="card">
+                <img src="rose.jpg" alt="david" style="width:100%">
+                <div class="container">
+                    <h2>David Hafeni</h2>
+                    <p class="title">CEO & Founder</p>
+                    <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+                    <p>chizzboy105@gmail.com</p>
+                    <p><button class="button">Contact</button></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="card">
+                <img src="reen.jpg" alt="david" style="width:100%">
+                <div class="container">
+                    <h2>David Williamson</h2>
+                    <p class="title">Art Director</p>
+                    <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+                    <p>chizzboy105@gmail.com</p>
+                    <p><button class="button">Contact</button></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="card">
+                <img src="banner.jpg" alt="david" style="width:100%">
+                <div class="container">
+                    <h2>David Doe</h2>
+                    <p class="title">Designer</p>
+                    <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+                    <p>chizzboy105@gmail.com</p>
+                    <p><button class="button">Contact</button></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br />
+    <table border="0" width="100%" bgcolor="transparent">
+
+        <tr>
+            <th>
+                <h5>
+                    Company :
+                </h5>
+                <p>
+                    <h5 style="color:blue">
+                        CHIZZY STUDIO'S
+                    </h5>
+                </p>
+            </th>
+            <th>
+                <h5>Our Misssion : </h5>
+                <p>TWICE THE VALUE HALF THE PRICE </p>
+            </th>
+            <th>
+                <h5>Contact Us : </h5>
+                <p> <a href="tel:+264-812-530-545">+264 812 530 545</a></p>
+                <a href="mailto:chizzystudios1@gmail.com" target="_blank"><p>Info @chizzystudios1@gmail.com</p></a>
+            </th>
+            <td align="center"><a href="termsnconditions.html" target="_blank"><h6>T&C's</h6></a></td>
+            <td align="center"><a href="termsnconditions.html" target="_blank"><h6>Disclaimer</h6></a></td>
+            <td align="center"><a href="termsnconditions.html" target="_blank"><h6>Privacy</h6></a></td>
+            <td align="center"><p>@ &nbsp;2021 Official Chizzboy </p></td>
+        </tr>
+
+    </table>
+
+</body>
+</html>

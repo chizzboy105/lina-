@@ -1,0 +1,247 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .bg-image {
+            /* Full height */
+            height: 50%;
+            /* Center and scale the image nicely */
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        /* Images used */
+        .img1 {
+            background-image: url("whiteflower.jpg");
+        }
+
+        /* Position text in the middle of the page/image */
+        .bg-text {
+            background-color: rgb(0,0,0); /* Fallback color */
+            background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+            color: white;
+            font-weight: bold;
+            font-size: 50px;
+            border: 10px solid #f1f1f1;
+            position: fixed;
+            top: 20%;
+            left: 20%;
+            transform: translate(-50%, -50%);
+            z-index: 2;
+            width: 400px;
+            padding: 20px;
+            text-align: center;
+        }
+        .bg-text1 {
+            background-color: rgb(0,0,0); /* Fallback color */
+            background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+            color: white;
+            font-weight: bold;
+            font-size: 20px;
+            border: 10px solid #f1f1f1;
+            position: fixed;
+            top: 60%;
+            left: 20%;
+            transform: translate(-50%, -50%);
+            z-index: 2;
+            width: 400px;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .fa {
+            padding: 0px;
+            font-size: 30px;
+            width: 60px;
+            text-align: center;
+            text-decoration: none;
+            margin: 5px 2px;
+        }
+
+            .fa:hover {
+                opacity: 0.7;
+            }
+
+        .pagination {
+            display: inline-block;
+        }
+
+            .pagination a {
+                color: black;
+                float: left;
+                padding: 8px 16px;
+                text-decoration: none;
+                transition: background-color .3s;
+                border: 1px solid #ddd;
+            }
+
+                .pagination a.active {
+                    background-color: #4CAF50;
+                    color: white;
+                    border: 1px solid #4CAF50;
+                }
+
+                .pagination a:hover:not(.active) {
+                    background-color: #ddd;
+                }
+
+        button {
+            width: 80px;
+            height: 40px;
+            background-color: transparent;
+            box-shadow: initial;
+        }
+
+            button:hover {
+                width: 85px;
+                height: 45px;
+                color: yellow;
+            }
+    </style>
+</head>
+<body>
+
+    <div class="bg-image img1"></div>
+    <div class="bg-image img1"></div>
+
+    <div class="bg-text">Request Form</div>
+    <br />
+    <div class="bg-text1">
+        <form>
+            <br />
+            <input type="text" value="Name" placeholder="Name" />
+            <br />
+            <input type="text" value="Surname" placeholder="Surname" />
+            <br />
+            <input type="text" value="Business_name" placeholder="Business_name" />
+            <br />
+            <input type="text" value="Business_category" placeholder="Business_category" />
+            <br />
+            <br />
+            <textarea cols="45" rows=" 10" placeholder="Description of what services you are inquiring for"></textarea>
+            <button type="submit" value="submit">Submit</button>
+        </form>
+    </div>
+    <br />
+
+    <center>
+
+        <h1 style="color:darkorange"><b><i>Our Social Media Platforms..</i></b></h1>
+
+        <table border="0" width="100%" bgcolor="grey">
+            <tr>
+                <td align="center">
+                    <a href="https://wa.me/264812530545" target="_blank ">
+                        <i class="fa fa-whatsapp"></i>
+                    </a>
+                </td>
+                <td align="center">
+                    <a href="https://www.facebook.com/brojansen" target="_blank">
+                        <i class="fa fa-facebook"></i>
+                    </a>
+                </td>
+                <td align="center">
+                    <a href="https://www.instagram.com/lina.s__exclusive.__boutique__/" target="_blank">
+                        <i class="fa fa-instagram"></i>
+                    </a>
+                </td>
+                <td align="center">
+                    <a href="https://youtu.be/R7h69W3zw74" target="_blank">
+                        <i class="fa fa-youtube"></i>
+                    </a>
+                </td>
+                <td align="center">
+                    <a href="mailto:linaboutique3322@gmail.com" target="_blank">
+                        <i class="fa fa-google"></i>
+                    </a>
+                </td>
+            </tr>
+        </table>
+
+        <br />
+        <br />
+        <!--
+            <div align="center" class="container">
+
+                <div class="w3-card-4" style="width:50%">
+                    <header class="w3-container w3-light-grey">
+                        <h2 style="color:yellow" align="center">Lina's Boutique  </h2>
+                    </header>
+                    <div class="w3-container">
+
+                        <hr />
+                        <h3 style="color:black" font-family="algerian" align="center">
+                            IS a intergrated website to facilitate online services in one go.
+                            What you can expect : a wide range of product & services.
+                            Please do leave  comment to help us make it easy for us to improve our
+                            services ,we highly appreciate your input.
+                        </h3>
+
+                    </div>
+                    <a href="https://www.linkedin.com/in//" target="_blank">
+                        <i class="fa-fa-linkedin-in" style="color:aqua">
+                            <img src="linkedin-49-226551.jpg" alt="Linked-In.jpg" />
+                        </i>
+                    </a>
+                </div>
+            </div>
+
+        <br />
+                -->
+    </center>
+    <center>
+        
+        <p>Home/Previous </p>
+        <div class="pagination">
+            <a href="combination.html"><</a>
+            <a href="Portfolio.html">></a>
+        </div>
+    </center>
+    <table border="0" width="100%" bgcolor="transparent">
+
+        <tr>
+            <th>
+                <h5>
+                    Company :
+                </h5>
+                <p>
+                    <h5 style="color:blue">
+                        CHIZZY STUDIO'S
+                    </h5>
+                </p>
+            </th>
+            <th>
+                <h5>Our Misssion : </h5>
+                <p>TWICE THE VALUE HALF THE PRICE </p>
+            </th>
+            <th>
+                <h5>Contact Us : </h5>
+                <p> <a href="tel:+264-812-530-545">+264 812 530 545</a></p>
+                <a href="mailto:chizzystudios1@gmail.com" target="_blank"><p>Info @chizzystudios1@gmail.com</p></a>
+            </th>
+            <td align="center"><a href="termsnconditions.html" target="_blank"><h6>T&C's</h6></a></td>
+            <td align="center"><a href="termsnconditions.html" target="_blank"><h6>Disclaimer</h6></a></td>
+            <td align="center"><a href="termsnconditions.html" target="_blank"><h6>Privacy</h6></a></td>
+            <td align="center"><p>@ &nbsp;2021 Official Chizzboy </p></td>
+        </tr>
+
+    </table>
+
+
+</body>
+</html>
