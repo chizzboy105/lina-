@@ -1,0 +1,685 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1,shrink-to-fit=no" />
+    <meta name="description" content="online shopping" />
+    <meta name="keywords" content="html,css,javascricpt" />
+    <meta name="author" content="ChizzBoy" />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <script src="https://unpkg.com/cart-localstorage@1.1.4/dist/cart-localstorage.min.js" type="text/javascript">
+
+    </script>
+
+    <title>Lina's HUB ONLINE</title>
+
+    <style>
+
+        body {
+            cursor: pointer;
+            backface-visibility: visible;
+            background-image: src(splash-d.jpg);
+            background-size: cover;
+            background: no-repeat;
+        }
+
+        li{
+            list-style:none;
+            float:left;
+            padding:10px;
+            margin:auto;
+            font-size:18px;
+        }
+
+        li:hover{
+            color:cadetblue;
+        }
+
+        .category li {
+            list-style: none;
+            float: left;
+            padding: 25px;
+            margin: 0px 10px 0px 40px;
+            font-size: 25px;
+        }
+
+
+        #slideshow {
+            overflow: hidden;
+            height: 410px;
+            width: 1300px;
+            margin: 0 auto;
+        }
+
+        /* Style each of the sides
+        with a fixed width and height */
+
+        .slide {
+            float: left;
+            height: 810px;
+            width: 450px;
+        }
+
+        /* Add animation to the slides */
+
+        .slide-wrapper {
+            /* Calculate the total width on the
+        basis of number of slides */
+            width: calc(728px * 12);
+            /* Specify the animation with the
+        duration and speed */
+            animation: slide 15s ease infinite;
+        }
+
+        /* Set the background color
+        of each of the slides */
+
+        .slide:nth-child(1) {
+            background: green;
+        }
+
+        .slide:nth-child(2) {
+            background: pink;
+        }
+
+        .slide:nth-child(3) {
+            background: red;
+        }
+
+        .slide:nth-child(4) {
+            background: yellow;
+        }
+        .slide:nth-child(5) {
+            background: grey;
+        }
+        .slide:nth-child(6) {
+            background: grey;
+        }
+        .slide:nth-child(7) {
+            background: grey;
+        }
+        .slide:nth-child() {
+            background: grey;
+        }
+        .slide:nth-child(8) {
+            background: grey;
+        }
+        .slide:nth-child(9) {
+            background: grey;
+        }
+
+        /* Define the animation
+        for the slideshow */
+
+        @keyframes slide {
+            /* Calculate the margin-left for
+        each of the slides */
+            20% {
+                margin-left: 0px;
+            }
+
+            40% {
+                margin-left: calc(-728px * 1);
+            }
+
+            60% {
+                margin-left: calc(-728px * 2);
+            }
+
+            80% {
+                margin-left: calc(-728px * 3);
+            }
+            100%{
+                margin-left: calc(-728px * 4);
+            }
+        }
+
+        .slideshow img {
+            overflow: hidden;
+            height: 510px;
+            width: 728px;
+            margin: 0 auto;
+        }
+
+        .fa {
+            padding: 0px;
+            font-size: 30px;
+            width: 50px;
+            text-align: center;
+            text-decoration: none;
+            margin: 5px 2px;
+        }
+
+            .fa:hover {
+                opacity: 0.7;
+            }
+
+        .button {
+            padding: 15px 25px;
+            font-size: 24px;
+            text-align: center;
+            cursor: pointer;
+            outline: none;
+            color: #fff;
+            background-color: #04AA6D;
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 9px #999;
+        }
+
+        button {
+            padding: 15px 25px;
+            font-size: 24px;
+            text-align: center;
+            cursor: pointer;
+            outline: none;
+            color: #fff;
+            background-color: #04AA6D;
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 9px #999;
+        }
+
+            button:hover {
+                color: blueviolet;
+            }
+         
+        table th{
+            text-align:center;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <p style="color:darkslategrey" align="center">
+        Powered by Chizzy Studio's
+    </p>
+    <h1 style="color:deeppink" align="center" color="white">
+        Lina's   Exclusive  Boutique
+    </h1>
+    <hr />
+    <ul style="background-color:aquamarine">
+
+        <a href="#">
+        <li> Home           </li> </a>
+        <a href="#lina-about">
+        <li> About          </li> </a>
+        <a href="#product">
+        <li> Gallery       </li> </a>
+        <a href="#s-contact">
+        <li>Social Media    </li> </a>
+        <a href="lina-cart.html" target="_blank">
+        <li> Cart & Check Out</li>
+        </a>
+
+    </ul>
+    <br />
+    <br />
+    <br />
+    <br />
+    <hr />
+    <div id="slideshow" style="background-color:black" ;>
+        <div class="slide-wrapper">
+
+            <div class="slide">
+                <h2 align="center" class="slide-number">
+                    Pants
+                </h2>
+                <img src="IMG-20211108-WA0068.jpg" width="600px" height="450px" />
+
+
+            </div>
+            c<div class="slide">
+                <h2 align="center" class="slide-number">
+                    Track-Suits
+                </h2>
+                <img src="IMG-20211108-WA0077.jpg" width="600px" height="450px" />
+
+            </div>
+            <div class="slide">
+                <h2 align="center" class="slide-number">
+                    Foot-Wear
+                </h2>
+                <img src="IMG-20211018-WA0030.jpg" width="470px" height="450px" />
+
+            </div>
+            <div class="slide">
+                <h2 align="center" class="slide-number">
+                    Watches
+                </h2>
+                <img src="goldwatch.jpg" width="600px" height="450px" />
+
+            </div>
+
+            <div class="slide">
+                <h2 align="center" class="slide-number">
+                    More
+                </h2>
+                <img src="pinklvbag.jpg" width="600px" height="450px" />
+
+            </div>
+
+            <div class="slide">
+                <h2 align="center" class="slide-number">
+                    More
+                </h2>
+                <img src="jacket3.jpg" width="600px" height="450px" />
+
+            </div>
+
+            <div class="slide">
+                <h2 align="center" class="slide-number">
+                    More
+                </h2>
+                <img src="adit.jpg" width="600px" height="450px" />
+
+            </div>
+
+            <div class="slide">
+                <h2 align="center" class="slide-number">
+                    More
+                </h2>
+                <img src="2piece1.jpg" width="600px" height="450px" />
+
+            </div>
+
+            <div class="slide">
+                <h2 align="center" class="slide-number">
+                    More
+                </h2>
+                <img src="blackdress1.jpg" width="600px" height="450px" />
+
+            </div>
+            </div>
+        </div>
+
+    <div class="header" style="background-color:black; color:white">
+        <br />
+        <!--<a href="mainpage.html" target="_blank">
+        <h1 align="center" style="color:gold; font-family:Algerian; font-size:30px"> Fashion Hub  </h1>
+    </a>
+            -->
+        <br />
+    </div>
+
+    <ul class="category" style="background-color:aquamarine">
+        <!--
+    <a href="mensfashion.html" target="_blank">
+    <li align="center"> Men's Fashion          </li> </a>
+        -->
+        <a href="womenfashion.html" target="_blank">
+        <li align="center"> Women's Fashion          </li> </a>
+
+        <a href="#footwear">
+        <li align="center"> Foot-Wear    </li> </a>
+
+        <a href="#acc">
+        <li align="center"> Accessories    </li> </a>
+        <!--
+    <a href="#headwear">
+    <li align="center"> Head-Wear    </li> </a>
+        -->
+
+    </ul>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <center>
+        <br />
+        <br />
+        <big> BELLOW PRODUCTS 1: Sreenshoot Product 2: Contact Us Via social Media Or other Contact Media 3: Get Price Of Item Limited Stock !!</big>
+        <br />
+        <small> NOTICE : Some Items/Products May Be Out Of Stock </small>
+    </center>
+
+    <center>
+        <br />
+
+        <h1 id="product">  Jerseys & Shirts </h1>
+        <br />
+        <div id="Shirts">
+            <img src="adit.jpg" width="400px" height="250px" />
+            <img src="shortsleeve.jpg" width="400px" height="250px" />
+            <img src="yelloj.jpg" width="400px" height="250px" />
+            <img src="denim.jpg" width="400px" height="250px" />
+            <img src="dcolors.jpg" width="400px" height="250px" />
+            <img src="longsleeve.jpg" width="400px" height="250px" />
+
+        </div>
+
+
+        <br />
+        <br />
+        <h1> Pants </h1>
+        <br />
+        <div id="Pants ">
+            <img src="IMG-20211108-WA0045.jpg" width="400px" height="250px" />
+            <img src="IMG-20211108-WA0068.jpg" width="400px" height="250px" />
+            <img src="IMG-20211108-WA0064.jpg" width="400px" height="250px" />
+            <img src="IMG-20211111-WA0043.jpg" width="400px" height="250px" />
+            <img src="IMG-20211111-WA0050.jpg" width="400px" height="250px" />
+
+        </div>
+
+        <br />
+        <br />
+        <h1> Track-Suits </h1>
+        <br />
+        <div id="Track-Suits ">
+            <img src="IMG-20211111-WA0046.jpg" width="400px" height="250px" />
+            <img src="IMG-20211108-WA0049.jpg" width="400px" height="250px" />
+            <img src="IMG-20211108-WA0049.jpg" width="400px" height="250px" />
+            <img src="IMG-20211108-WA0077.jpg" width="400px" height="250px" />
+            <img src="IMG-20211108-WA0049.jpg" width="400px" height="250px" />
+            <img src="IMG-20211111-WA0046.jpg" width="400px" height="250px" />
+
+        </div>
+
+        <br />
+        <br />
+        <h1> Dresses </h1>
+        <br />
+        <div id="Dressess ">
+            <img src="dress1.jpg" width="400px" height="250px" />
+            <img src="dress2.jpg" width="400px" height="250px" />
+            <img src="dress3.jpg" width="400px" height="250px" />
+
+        </div>
+        <br />
+        <br />
+        <h1 id="footwear"> Foot-Wear  </h1>
+        <br />
+        <div id="Foot-Wear ">
+            <img src="IMG-20211018-WA0030.jpg" width="400px" height="250px" />
+            <img src="IMG-20211108-WA0006.jpg" width="400px" height="250px" />
+            <img src="IMG-20211108-WA0056.jpg" width="400px" height="250px" />
+            <img src="IMG-20211108-WA0066.jpg" width="400px" height="250px" />
+            <img src="IMG-20211111-WA0058.jpg" width="400px" height="250px" />
+            <img src="IMG-20211111-WA0056.jpg" width="400px" height="250px" />
+
+        </div>
+        <br />
+        <br />
+        <h1 id="acc"> Accessories  </h1>
+        <br />
+        <div id="Accessories ">
+            <img src="IMG-20211108-WA0074.jpg" width="400px" height="250px" />
+            <img src="eye.jpg" width="400px" height="250px" />
+            <img src="IMG-20211108-WA0067.jpg" width="400px" height="250px" />
+
+        </div>
+
+        <h1 id="headwear"> HAIR </h1>
+        <br />
+        <div id="Headwear ">
+            <img src="IMG-20211111-WA0066.jpg" width="400px" height="250px" />
+            <img src="IMG-20211111-WA0067.jpg" width="400px" height="250px" />
+
+        </div>
+
+        <br />
+        <br />
+        <h1 id="acc"> Perfumes  </h1>
+        <br />
+        <div id="Perfumes ">
+            <img src="IMG-20211111-WA0052.jpg" width="400px" height="250px" />
+            <img src="IMG-20211111-WA0053.jpg" width="400px" height="250px" />
+            <img src="IMG-20211111-WA0054.jpg" width="400px" height="250px" />
+            <img src="IMG-20211111-WA0055.jpg" width="400px" height="250px" />
+
+        </div>
+
+    </center>
+    <br />
+    <center>
+
+        <marquee scrollamount="8" direction="right">
+            <p style="color:purple">CHIZZY Make It Look Eazy</p>
+        </marquee>
+        <marquee scrollamount="7" direction="left">
+            <p style="color:red">
+                lina'S Boutique <span style="color:yellow">A Collection Of Collections</span>
+                Fashion & Entertainment<span style="color:purple"> at heart </span>
+            </p>
+        </marquee>
+        <br />
+        <br />
+        <br />
+        <table border="0" width="40%">
+            <tr>
+                <td>
+                    <button onclick="myfunction()" class="button">Sale </button>
+                    <script>
+                        function myfunction() {
+                            alert("No current Sales at the moment");
+                        }
+                    </script>
+
+                </td>
+
+                <td>
+                    <button onclick="myFunction()" class="button">Discount</button>
+
+                    <script>
+                        function myFunction() {
+                            alert("Items not yet available ");
+                        }
+                    </script>
+
+                </td>
+
+                <td>
+                    <button onclick="myFunction()" class="button">New Arrivals</button>
+
+                    <script>
+                        function myFunction() {
+                            alert("Items not yet available ");
+                        }
+                    </script>
+
+                </td>
+            </tr>
+        </table>
+    </center>
+    <br />
+    <br />
+    <h1 align="center"> Payment Methods</h1>
+
+    <h3 id="info" align="center" style="color:aqua"> Payment Methods AVAILABLE : FNB_EWALLET </h3>
+
+
+    <p align="center"> Payment Done Directly too payment methods available<span style="color:red"> OR </span> Contact Us For Other Means Of Payment :<span style="color:blue"> BANK TRANSFERS</span></p>
+
+    <div align="center" class="info">
+
+        <h2 style="color:chartreuse">
+            <span style="color:red"> NB ! : </span>How We Operate
+        </h2>
+        <p>
+            1.Add To Cart<br />2.Take ScreenShot Of your Cart <br />3.Click On Whatsapp icon To Procceed to Payment <br />4.Send ScreenShot of your cart Items To Be Ordered via WhatsApp<br />5.Recieve Further Instructions for Completing Your Order <br />6.Recieve Purchase Invoice <br />7.<span style="color:orangered"> Order Complete + link back To Site </span>
+        </p>
+
+    </div>
+
+    <h2 align="center"> <a href="tel:+264-812-530-545"> Copy E-WALLET Number </a> </h2>
+    <br />
+    <table align="left" border="0" width="100%" bgcolor="#ffd699">
+        <tr>
+            <th><h2> OPERATING HOURS </h2></th>
+        </tr>
+    </table>
+    <br />
+
+    <table align="center" border="0" width="100%" bgcolor="white">
+        <tr>
+            <th>
+                DAYS :
+                <p>
+                    MONDAY-FRIDAY
+                </p>
+                <p>
+                    SATURDAY- SUNDAY
+                </p>
+            </th>
+            <th>
+                TIMINGS
+                <p>
+                    9:45 -18:30
+                </p>
+                <p>
+                    10:30 - 16:30
+                </p>
+            </th>
+
+        </tr>
+    </table>
+    <table align="left" border="0" width="100%" bgcolor="#ffd699">
+        <tr>
+            <th><h2>Online Shopping </h2></th>
+        </tr>
+    </table>
+
+    <div class="header" style="background-color:black; color:white">
+        <br />
+        <h1 align="center"> <span style="color:black">ONLINE SHOPPING</span>   </h1>
+
+    </div>
+
+    <br />
+    <br />
+
+    <h1 align="center" style="color:gold"><b>More Products Coming Soon!!</b></h1>
+
+    <p align="center" style="color:black">
+        What we Offer ::<br />
+        Have a look
+    </p>
+    <h1 id="s-contact" align="center" style="color:darkorange"><b><i>Our Social Media Platforms...</i></b></h1>
+
+
+
+    <table border="0" width="100%" bgcolor="grey">
+        <tr>
+            <td align="center">
+                <a href="https://wa.me/264812530545" target="_blank ">
+                    <i class="fa fa-whatsapp"></i>
+                </a>
+            </td>
+            <td align="center">
+                <a href="https://www.facebook.com/brojansen" target="_blank">
+                    <i class="fa fa-facebook"></i>
+                </a>
+            </td>
+            <td align="center">
+                <a href="https://www.instagram.com/lina.s__exclusive.__boutique__/" target="_blank">
+                    <i class="fa fa-instagram"></i>
+                </a>
+            </td>
+            <td align="center">
+                <a href="https://youtu.be/R7h69W3zw74" target="_blank">
+                    <i class="fa fa-youtube"></i>
+                </a>
+            </td>
+            <td align="center">
+                <a href="mailto:linaboutique332@gmail.com" target="_blank">
+                    <i class="fa fa-google"></i>
+                </a>
+            </td>
+        </tr>
+    </table>
+
+    <br />
+    <br />
+
+    <a href="#">
+        <h4 align="center"> Go Back Up  </h4>
+    </a>
+
+    <div align="center" class="container">
+
+        <div class="w3-card-4" style="width:50%">
+            <header class="w3-container w3-light-grey">
+                <h2 id="lina-about" style="color:yellow" align="center">Lina's Boutique  </h2>
+            </header>
+            <div class="w3-container">
+
+                <hr />
+                <h5 style="color:mediumpurple" align="center">
+                    IS a intergrated website to facilitate online services in one go.
+                    What you can expect : a wide range of product & services.
+                    Please do leave  comment to help us make it easy for us to improve our
+                    services ,we highly appreciate your input.
+                </h5>
+
+            </div>
+            <a href="https://www.linkedin.com/in//" target="_blank">
+                <i class="fa-fa-linkedin-in" style="color:aqua">
+                    <img src="linkedin-49-226551.jpg" alt="Linked-In.jpg" />
+                </i>
+            </a>
+        </div>
+    </div>
+    <br />
+    <table align="left" border="0" width="100%" bgcolor="#ffd699">
+        <tr>
+            <th>
+                <h2>
+                    Contact US
+                </h2>
+            </th>
+        </tr>
+    </table>
+    <br />
+
+    <table align="center" border="0" width="100%" bgcolor="white">
+        <tr>
+            <th>
+                Company :
+                <p style="color:red">
+                    Lina's Boutique
+                </p>
+            </th>
+            <th>
+                About Us
+                <p style="color:red">
+                    Our Misssion : I Can You Can We can Do It
+                </p>
+            </th>
+            <th>
+                Contact Us
+                <p style="color:red"> <a href="tel:+264-812-530-545">+264 812 530 545</a></p>
+                <a href="mailto:linaboutique332@gmail.com" target="_blank">Info @linaboutique332@gmail.com</a>
+            </th>
+        </tr>
+    </table>
+
+
+    <table border="0" width="100%">
+        <tr>
+            <td align="center"><a href="termsnconditions.html" target="_blank">T&C's</a></td>
+            <td align="center"><a href="termsnconditions.html" target="_blank">Disclaimer</a></td>
+            <td align="center"><a href="termsnconditions.html" target="_blank">Privacy</a></td>
+            <td align="center"><a href="termsnconditions.html" target="_blank">Policy</a></td>
+        </tr>
+    </table>
+
+    <table border="0" width="100%" bgcolor="grey">
+        <tr>
+            <td align="center"><p>@ &nbsp;2021 Official Chizzboy </p></td>
+        </tr>
+    </table>
+
+</body>
+        </html >

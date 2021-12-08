@@ -1,0 +1,261 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        html {
+            box-sizing: border-box;
+        }
+
+        *, *:before, *:after {
+            box-sizing: inherit;
+        }
+
+        .column {
+            float: left;
+            width: 33.3%;
+            margin-bottom: 16px;
+            text-align: center;
+            padding: 0 8px;
+            text-shadow:initial;
+        }
+
+        @media screen and (max-width: 650px) {
+            .column {
+                width: 100%;
+                display: block;
+                text-align:center;
+            }
+        }
+
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        }
+
+        .container {
+            padding: 0 16px;
+        }
+
+            .container::after, .row::after {
+                content: "";
+                clear: both;
+                display: table;
+            }
+
+        .title {
+            color: grey;
+        }
+
+        .button {
+            border: none;
+            outline: 0;
+            display: inline-block;
+            padding: 8px;
+            
+            background-color: #000;
+            text-align: center;
+            cursor: pointer;
+            width: 100%;
+        }
+
+            .button:hover {
+                background-color: #555;
+            }
+
+        ul {
+            background-color: transparent;
+            list-style: none;
+            float: left;
+            color: red;
+            font-size: 16px;
+            flex: none;
+
+        }
+
+        li {
+            text-align: center;
+            color: black;
+            float: left;
+            font-size: 20px;
+            list-style: none;
+            padding: 1px 2px 2px 1px;
+            margin: 2px 2px 2px 2px;
+            text-decoration: none;
+            color: blue;
+        }
+
+        .pagination {
+            display: inline-block;
+        }
+
+            .pagination a {
+                color: black;
+                float: left;
+                padding: 8px 16px;
+                text-decoration: none;
+                transition: background-color .3s;
+                border: 1px solid #ddd;
+            }
+
+                .pagination a.active {
+                    background-color: #4CAF50;
+                    color: white;
+                    border: 1px solid #4CAF50;
+                }
+
+                .pagination a:hover:not(.active) {
+                    background-color: #ddd;
+                }
+        button {
+            width: 10vw;
+            height: 10vh;
+            background-color: lightblue;
+            box-shadow: initial;
+            color:ActiveBorder;
+            text-decoration:none;
+        }
+
+            button:hover {
+                text-decoration: none;
+                background-color: white;
+
+            }
+
+
+    </style>
+</head>
+<body>
+
+
+    <div>
+        <ul>
+            <li>
+                <a href="HTMLPage2.html">
+                    Home
+                </a>
+            </li>
+
+            <li>
+                <a href="team.html">
+                    Team
+                </a>
+            </li>
+
+            <li>
+                <a href="enquire.html">
+                    Contact Info
+                </a>
+            </li>
+
+            <li>
+                <a href="form.html">
+                    Reservation
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div>
+        <img width="100%" height="300vh" src="whiteflower.jpg" />
+    </div>
+    
+        <center>
+            <a href="Portfolio.html">
+                <button type="button">
+                    <p style="color:gold" font-size="18px">CLick Me</p>
+                </button>
+            </a>
+
+            <div class="pagination">
+                <a href="termsnconditions.html"><</a>
+                <a href="HTMLPage3.html">></a>
+            </div>
+        </center>
+        <br />
+        <hr />
+        <center>
+            <h2>"CHIZZY STUDIO'S </h2>
+            <hr />
+
+            <br>
+        </center>
+        <div class="row">
+            <div class="column">
+                <div class="card">
+                    <img src="banner.jpg" alt="david" style="width:100%">
+                    <div class="container">
+                        <h2>Online Shopping</h2>
+                        <p class="title">Fashion & Entertainment</p>
+                        <p>Wide variety of products and services Via us</p>
+                        <p>chizzboy105@gmail.com</p>
+                        <a href="lina-Hub.html">
+                            <p><button class="button">Link To Website</button></p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="card">
+                    <img src="banner.jpg" alt="david" style="width:100%">
+                    <div class="container">
+                        <h2>Web Services</h2>
+                        <p class="title"> Websites Works</p>
+                        <p>We create templates for small n personal bloggers online</p>
+                        <p>chizzboy105@gmail.com</p>
+                        <a href="lina-Hub.html">
+                            <p><button class="button">Link To Website</button></p>
+                          </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="card">
+                    <img src="banner.jpg" alt="david" style="width:100%">
+                    <div class="container">
+                        <h2>Food & Drinks </h2>
+                        <p class="title">Bakery & Restuarant</p>
+                        <p>Order with us Get amazing dishes Local is Lekker </p>
+                        <p>chizzboy105@gmail.com</p>
+                        <a href="lina-Hub.html">
+                            <p><button class="button">Link To Website</button></p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br />
+
+        <table border="0" width="100%" bgcolor="transparent">
+
+            <tr>
+                <th>
+                    <h5>
+                        Company :
+                    </h5>
+                    <p>
+                        <h5 style="color:blue">
+                            CHIZZY STUDIO'S
+                        </h5>
+                    </p>
+                </th>
+                <th>
+                    <h5>Our Misssion : </h5>
+                    <p>TWICE THE VALUE HALF THE PRICE </p>
+                </th>
+                <th>
+                    <h5>Contact Us : </h5>
+                    <p> <a href="tel:+264-812-530-545">+264 812 530 545</a></p>
+                    <a href="mailto:chizzystudios1@gmail.com" target="_blank"><p>Info @chizzystudios1@gmail.com</p></a>
+                </th>
+                <td align="center"><a href="termsnconditions.html" target="_blank"><h6>T&C's</h6></a></td>
+                <td align="center"><a href="termsnconditions.html" target="_blank"><h6>Disclaimer</h6></a></td>
+                <td align="center"><a href="termsnconditions.html" target="_blank"><h6>Privacy</h6></a></td>
+                <td align="center"><p>@ &nbsp;2021 Official Chizzboy </p></td>
+            </tr>
+
+        </table>
+
+</body>
+</html>
